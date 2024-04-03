@@ -1,0 +1,46 @@
+<div class="container mt-4">
+  <div class="card">
+      <h1>Alunos Registration</h1>
+      <form>
+          <div class="form-group">
+              <label for="Nome">Nome</label>
+              <input type="text" [(ngModel)]="nome" [ngModelOptions]="{standalone: true}" class="form-control" id="Nome" placeholder="Enter Nome">
+          </div>
+          <div class="form-group">
+              <label for="Pais">Pais</label>
+              <input type="text" [(ngModel)]="pais" [ngModelOptions]="{standalone: true}" class="form-control" id="Pais" placeholder="Enter Pais">
+          </div>
+          <div class="form-group">
+              <label for="Telefone">Telefone</label>
+              <input type="text" [(ngModel)]="telefone" [ngModelOptions]="{standalone: true}" class="form-control" id="Telefone" placeholder="Enter Telefone">
+          </div>
+          <button type="button" class="btn btn-primary mt-4" (click)="save()">Submit</button>
+      </form>
+  </div>
+  <div class="Alunos mt-4">
+      <h1>Students</h1>
+      <table class="table">
+          <thead>
+              <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Pais</th>
+                  <th scope="col">Telefone</th>
+                  <th scope="col">Option</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let StudentItem of AlunosArray">
+                  <td>{{StudentItem.id}}</td>
+                  <td>{{StudentItem.name | uppercase}}</td>
+                  <td>{{StudentItem.pais | uppercase}}</td>
+                  <td>{{StudentItem.telefone}}</td>
+                  <td>
+                      <button type="button" class="btn btn-success btn-sm" (click)="setUpdate(StudentItem)">Edit</button>
+                      <button type="button" class="btn btn-danger btn-sm" (click)="setDelete(StudentItem)">Delete</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

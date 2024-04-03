@@ -1,0 +1,105 @@
+/* Estilos para o conteúdo do login */
+.content-login {
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+}
+
+/* Estilos para o formulário de login */
+.form-content {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 30px 60px 0 gray;
+    text-align: center;
+    width: 60%;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.form-content:hover {
+    box-shadow: 0 30px 60px 0 rgb(54, 54, 54);
+}
+
+/* Estilos para os campos de entrada e botão de login */
+.input-login, .input-submit {
+    width: 90%;
+    margin: 5px auto; /* Centraliza os elementos horizontalmente */
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #f6f6f6;
+    background-color: #f6f6f6;
+    color: #0d0d0d;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Estilos para a mensagem de erro */
+.error-message {
+    font-size: 14px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px; /* Adiciona espaço entre a mensagem de erro e o campo de entrada */
+}
+
+/* Estilos específicos para o botão de login */
+.input-submit {
+    background-color: #8d448d;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    font-size: 13px;
+    box-shadow: 0 10px 30px 0 #8f2a8b;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Estilos para o logo */
+.logo {
+    font-family: 'Franklin Gothic Medium', Arial, Helvetica, sans-serif;
+    height: 80px;
+    background-color: #8d448d;
+    color: white;
+    font-size: 13px;
+    box-shadow: 0 10px 30px 0 #8f2a8b;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+/* Estilos para o botão de logout */
+.logout-button {
+    background-color: #c62828; /* Cor de fundo */
+    border: none; /* Remove a borda */
+    color: white; /* Cor do texto */
+    margin-top: 10px; /* Espaço superior */
+    padding: 15px 0px; /* Preenchimento */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    font-size: 13px; /* Tamanho da fonte */
+    box-shadow: 0 10px 30px 0 #b71c1c; /* Sombra */
+    transition: all 0.3s ease-in-out; /* Transição suave */
+    cursor: pointer; /* Ícone de cursor */
+}
+
+.logout-button:hover {
+    background-color: #b71c1c; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 10px 30px 0 #9e0000; /* Sombra ao passar o mouse */
+}
+
+/* Estilos específicos para o logo */
+.logo {
+    font-family: 'Franklin Gothic Medium', Arial, Helvetica, sans-serif;
+    height: 80px;
+    background-color: #8d448d;
+    color: white;
+    font-size: 13px;
+    box-shadow: 0 10px 30px 0 #8f2a8b;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+

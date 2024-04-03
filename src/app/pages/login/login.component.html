@@ -1,0 +1,28 @@
+<div class="content-login">
+    <form class="form-content" [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+        <div class="logo">
+            Logo
+        </div>
+        <div>
+            <div>
+                <input class="input-login" placeholder="Email" formControlName="email" />
+                <div class="error-message" *ngIf="loginForm.get('email')?.errors?.['required'] && loginForm.get('email')?.touched">
+                    Email obrigatório!
+                </div>
+                <div class="error-message" *ngIf="loginForm.get('email')?.errors?.['email'] && loginForm.get('email')?.touched">
+                    Formato de email inválido!
+                </div>
+            </div>
+            <div>
+                <input class="input-login" type="password" placeholder="Senha" formControlName="password" />
+                <div class="error-message" *ngIf="loginForm.get('password')?.errors?.['required'] && loginForm.get('password')?.touched">
+                    Campo obrigatório!
+                </div>
+            </div>
+            <div>
+                <button class="input-submit" [disabled]="loginForm.invalid">Logar</button>
+                <button class="input-submit logout-button" (click)="logout()">Logout</button>
+            </div>
+        </div>
+    </form>
+</div>
